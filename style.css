@@ -2,16 +2,31 @@ body{
     padding: 0px;
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 2px;
 }
 
-h3{
-    margin-top: 60px;
+h1{
+    margin-top: 100px;
     font-weight: bold;
+    cursor: pointer;
+    
 }
+h1{
+    transition: color 0.5s ease;
+   transition: letter-spacing 0.3s ease;
+}
+
+h1:hover{
+color: rgb(173, 70, 1);
+transform: scale(1.2);
+transition: transform 0.3s ease;
+ transition: letter-spacing 0.3s ease;
+}
+
 
 button{
     border-radius: 3px;
-    background-color: rgb(28, 28, 146);
+    background-color: rgb(38, 38, 161);
     color: white;
     padding: 8px 20px 8px 20px;
     border: none;
@@ -25,12 +40,18 @@ div{
     background-color: white;
     padding: 80px;
     /* border: 2px solid wheat; */
-    margin-top: 140px;
+    margin-top: 10px;
     font-weight: bold;
     border-radius: 12px;
     box-shadow: 3px 5px 40px 3px rgb(189, 186, 186);
     color: blue;
+    cursor: pointer;
+   
+}
 
+div:hover{
+transform: scale(1.1);
+transition: transform ease;
 }
 
 header{
@@ -42,4 +63,16 @@ header{
 button:hover {
     background-color: rgb(7, 7, 8);
     transition: transform 0.3s ease;
+    transform: scale(1.4);
+transition: transform ease;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   letter-spacing: 0.1px;
+   word-spacing: 2px;
+    font-family: monospace;
 }

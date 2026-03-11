@@ -22,6 +22,7 @@ let citations = [
  "« Celui qui pose des questions ne se perd jamais. »", 
 ]
 
+
 const bouton = document.getElementById("new-code");
 const zoneCitation = document.getElementById("citations");
 
@@ -30,3 +31,4 @@ bouton.addEventListener("click", function() {
 const index = Math.floor(Math.random() * citations.length);
 zoneCitation.innerText = citations[index];
 });
+
